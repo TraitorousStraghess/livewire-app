@@ -5,13 +5,11 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-use function Livewire\Volt\title;
-
 class Post extends Model
 {
     use HasFactory;
 
-    protected $fillabel = [
+    protected $fillable = [
         'title',
         'body',
         'user_id'

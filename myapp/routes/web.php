@@ -5,6 +5,7 @@ use App\Livewire\Settings\Appearance;
 use App\Livewire\Settings\Password;
 use App\Livewire\Settings\Profile;
 use App\Livewire\Settings\TwoFactor;
+use App\Livewire\ShowPosts;
 use GuzzleHttp\Promise\Create;
 use Illuminate\Support\Facades\Route;
 use Laravel\Fortify\Features;
@@ -29,3 +30,5 @@ Route::middleware(['auth'])->group(function () {
     Route::get('/posts/create', CreatePost::class)->name('posts.create');
 
 });
+
+Route::get('/posts', ShowPosts::class)->name('posts');

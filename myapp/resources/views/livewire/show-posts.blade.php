@@ -21,5 +21,5 @@
         </article>
     @endforeach
 
-    {{-- {{ $posts->links() }} --}}
+    {{ $posts->links() }}
 </div>
